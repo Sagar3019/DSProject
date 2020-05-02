@@ -1,0 +1,151 @@
+<?php
+  $GLOBALS['fnameerr']=0;
+  $GLOBALS['lnameerr']=0;
+  $GLOBALS['emailerr']=0;
+  $GLOBALS['enrnerr']=0;
+  $GLOBALS['fnumerr']=0;
+?>
+<html>
+<head>
+	<title>Home Page</title>
+	<style>
+		body
+		{
+			margin: 0px;
+			background-color: #f1c40f;
+		}
+		div#outer
+		{
+			text-align: center;
+			background-color: #154360;
+			padding: 20px;
+		}
+		div#inner
+		{
+			display: inline-block;
+		}
+		div#inner img
+		{
+			height: 100px;
+			float: left;
+			text-align: left;
+		}
+		div#inner h1
+		{
+			color: white;
+			letter-spacing: 2px;
+			padding: 15px;
+			font-size: 65px;
+			display: inline;
+		}
+		div#regout
+		{	
+			background-color: white;
+			padding: 30px 0px;
+			margin: 40px 300px;
+			opacity: .8;
+			border-radius: 30px;
+			font-variant: small-caps;
+		}
+		div#regin
+		{ 	
+			border: 3px solid black;
+			margin: 10px 120px;
+			padding: 35px 45px;
+			border-radius: 40px;
+		}
+		div#field
+		{
+			text-align: center;
+			font-size: 25px;
+			font-weight: bolder;
+		}
+		ul#menu
+		{
+			margin: 0;
+			padding: 0;
+			list-style: none;
+			font-variant: small-caps;
+			position: sticky;
+			top: 0;
+			z-index: 99;
+		}
+		ul#menu li , ul#ot li
+		{
+			float: left;
+			width: 307px;
+			height: 50px;
+			background-color: white;
+			opacity: 1;
+			line-height: 50px;
+			text-align: center;
+			font-size: 23px;
+			font-weight: 900;
+
+		}
+		ul#ot li
+		{
+			float: left;
+			width: 307px;
+			height: 50px;
+			background-color: white;
+			opacity: 1;
+			line-height: 50px;
+			text-align: center;
+			font-size: 20px;
+			font-weight: 900;
+			position: relative;
+			left: -15%;
+		}
+		ul#menu li a
+		{
+			text-decoration: none;
+			color: black;
+			display: block;
+		}
+		ul#menu li a:hover
+		{
+			background-color: #00aa00;
+		}
+		ul#menu li ul li
+		{
+			display: none;
+		}
+		ul#menu li:hover ul li
+		{
+			display: block;
+		}
+	</style>
+	<link rel="stylesheet" type="text/css" href="slider.css">
+</head>
+<body>	
+	<div id="outer">
+	<div id="inner">
+		<img src="amity_logo.png" alt="Amity Logo">
+		<h1>Amity Central Library</h1>
+	</div>
+	</div>
+	<ul id="menu">
+		<li><a href="index.php">Home</a></li>
+		<li><a href="">Programme</a>
+			<ul id="ot">
+					<li><a href="extended.php">Btech</a></li>
+      				<li><a href="extended.php">BCA</a></li>
+      				<li><a href="extended LLB.php">LLB</a></li>
+			</ul>
+		</li>
+		<li><a href="About Us.php">About Us</a></li>
+		<li><a href="login.php">Login</a></li>
+		<li><a href="register.php">Register</a></li>
+	</ul>
+	<form action="" method="POST">
+		<br><br>
+	<div id="regout">
+		<div id="regin">
+		 <div id="field">
+		 	Registration Successfull. Please Proceed to <a href="login.php"> Login. </a> 
+	 	 </div>
+		</div>
+	</div>
+</body>
+</html>
